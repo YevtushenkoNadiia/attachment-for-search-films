@@ -176,7 +176,8 @@ export const addMovieToList = (m) => {
     type:'img',
     attrs: {
       class: 'movie__image', 
-      src: /(http|https):\/\//.test(m.Poster) ? m.Poster : 'img/no-image.jpg'
+      // src: /(http|https):\/\//.test(m.Poster) ? m.Poster : 'img/no-image.jpg'
+      src: /(https):\/\//.test(m.Poster) ? m.Poster : 'img/no-image.jpg'
     },
     container: item
   });
